@@ -92,7 +92,7 @@ const PokedexApp = () => {
 
       <div className="flex justify-center items-center pt-5">
         <button
-          className="bg-[rgb(79,128,187)] text-white py-2 px-4 rounded-full"
+          className="bg-[rgb(79,128,187)] text-white py-2 px-4 rounded-full "
           onClick={() => {setCurrentPage(currentPage - 1);
             const newIndexOfLastCard = Math.max(itemsPerPage * (currentPage-1), totalCards);
             setIndexOfLastCard(newIndexOfLastCard);
