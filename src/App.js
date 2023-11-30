@@ -55,10 +55,10 @@ const PokedexApp = () => {
         onChange={handleSearch}
         className="border-b-2 w-96 border-gray-200 py-3 px-7"
       />
-      </div>
+    </div>
       
       
-      <div >
+      <div className='flex flex-wrap justify-center items-center pt-5'>
         {filteredPokemon.map((pokemon, index) => ( <div key={index}> 
             <div className='relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-60'>
             <p className='text-center block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900'>{pokemon.name.toUpperCase()}</p>
