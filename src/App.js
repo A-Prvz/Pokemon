@@ -36,10 +36,11 @@ const PokedexApp = () => {
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
-  const filteredPokemon = pokemonList.filter(pokemon =>
+  const filteredPokemon = pokemonList && pokemonList.filter(pokemon =>
   pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
  )
- .map(pokemon => pokemonDetails[pokemon.name]);
+ .map(pokemon => pokemonDetails[pokemon.name])
+ .filter(pokemon => pokemon); 
 
   return (
   
